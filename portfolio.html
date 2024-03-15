@@ -9,8 +9,7 @@
 <style>
     h1 {
         text-align: center;
-        background-color:plum;
-        color: rgb(110, 0, 110);
+        color: #A350A3;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -18,25 +17,51 @@
         font-size: 400%;
     
     }
+
     body{
-        background-color: lightblue; 
+        background-color: #0F0C24; 
+        color: #ffd5fa;
         font-family: Georgia, serif;
     }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #C1436D;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #2dc0ff;
+        color: white;
+    }  
 </style>
 <body>
-    <header>
-        <h1>2024 WSOA3028</h1>
-    </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Page.html">Page</a></li>
-            <li>Portfolio </li>
-        </ul>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="Page.html">Page</a>
+            <a class="active" href="portfolio.html">Portfolio</a>
+            <a href="Ideas.html">Crazy Ideas</a>
+        </div>
     </nav>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
     
     <main>
-        <h1>Portfolio</h1>
         <h2>examples</h2>
         <p>my example picture</p>
         <img src="images/coolpic.jpeg" width="500" height="600" alt="a real sick pic my dude">
