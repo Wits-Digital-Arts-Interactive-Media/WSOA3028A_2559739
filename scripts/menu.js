@@ -1,13 +1,13 @@
-const root = "/WSOA3028A_2559739"
+//const root = "/WSOA3028A_2559739"
 //const root = ""
 
 const menuItems = [
-    {name:"Home", href: `${root}/index.html`},
-    {name:"About", href: `${root}/about.html`},
-    {name:"Porfolio", href: `${root}/portfolio.html`},
-    {name:"Blog", href: `${root}/blogs/index.html`},
-    {name:"Essay", href: `${root}/Essays.html`},
-    {name:"Design", href: `${root}/Design.html`},
+    {name:"Home", href: `/index.html`},
+    {name:"About", href: `/about.html`},
+    {name:"Porfolio", href: `/portfolio.html`},
+    {name:"Blog", href: `/blogs/index.html`},
+    {name:"Essay", href: `/Essays.html`},
+    {name:"Design", href: `/Design.html`},
 ]
 
 export function initialise(currentPage)
