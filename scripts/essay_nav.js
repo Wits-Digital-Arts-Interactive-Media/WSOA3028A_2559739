@@ -1,0 +1,29 @@
+const root = "/WSOA3028A_2559739"
+
+const essayItems = [
+    {name:"UX & UI Analysis - temu.com", href: `${root}/essays/essay1.html`},
+]
+
+function essayMenu()
+{
+    const div = document.querySelector("div")
+    const h2 = document.createElement("h2")
+    h2.innerText = `List of essays`
+    div.appendChild(h2)
+    const ul = document.createElement("ul")
+
+    let count = 0
+    for (let essayItem of essayItems){
+        count = count + 1
+        const li = document.createElement("li")
+        const a = document.createElement("a")
+        a.innerText = `Essay ${count}: ${essayItem.name}`
+        a.setAttribute("href", essayItem.href)
+        li.appendChild(a)
+        ul.appendChild(li)
+    }
+
+    div.appendChild(ul) 
+}
+
+essayMenu()

@@ -3,23 +3,26 @@ const root = "/WSOA3028A_2559739"
 const lastBlog = 10
 
 const blogItems = [
-    {name:"0", href: ``},
-    {name:"1", href: `${root}/blogs/blog1.html`},
-    {name:"2", href: `${root}/blogs/blog2.html`},
-    {name:"3", href: `${root}/blogs/blog3.html`},
-    {name:"4", href: `${root}/blogs/blog4.html`},
-    {name:"5", href: ``},
-    {name:"6", href: `${root}/blogs/blog6.html`},
-    {name:"7", href: ``},
-    {name:"8", href: `${root}/blogs/blog8.html`},
-    {name:"9", href: `${root}/blogs/blog9.html`},
-    {name:"10", href: `${root}/blogs/blog10.html`},
+    {name: "", week:"0", href: ``},
+    {name: "Git - The enemy", week:"1", href: `${root}/blogs/blog1.html`},
+    {name: "The Wireframes", week:"2", href: `${root}/blogs/blog2.html`},
+    {name: "Semantic Markup", week:"3", href: `${root}/blogs/blog3.html`},
+    {name: "IxD Process", week:"4", href: `${root}/blogs/blog4.html`},
+    {name: "", week:"5", href: ``},
+    {name: "", week:"6", href: `${root}/blogs/blog6.html`},
+    {name: "", week:"7", href: ``},
+    {name: "", week:"8", href: `${root}/blogs/blog8.html`},
+    {name: "", week:"9", href: `${root}/blogs/blog9.html`},
+    {name: "", week:"10", href: `${root}/blogs/blog10.html`},
 
 ]
 
 export function blogMenu()
 {
-    const p = document.querySelector("p")
+    const div = document.querySelector("div")
+    const h2 = document.createElement("h2")
+    h2.innerText = `List of blogs`
+    div.appendChild(h2)
     const ul = document.createElement("ul")
 
     for (let blogItem of blogItems){
@@ -28,14 +31,14 @@ export function blogMenu()
         {
             const li = document.createElement("li")
             const a = document.createElement("a")
-            a.innerText = `Week ${blogItem.name}`
+            a.innerText = `Week ${blogItem.week}`
             a.setAttribute("href", blogItem.href)
             li.appendChild(a)
             ul.appendChild(li)
         }
     }
 
-    p.appendChild(ul) 
+    div.appendChild(ul) 
 }
 
 export function blogNav(blogWeek)
@@ -89,7 +92,7 @@ export function blogNav(blogWeek)
         console.log("not first")
         const li = document.createElement("li")
         const a = document.createElement("a")
-        a.innerText = `previous blog - week ${blogItems[preNum].name}`
+        a.innerText = `previous blog - week ${blogItems[preNum].week}`
         a.setAttribute("href", blogItems[preNum].href)
         li.appendChild(a)
         ul.appendChild(li)
@@ -101,7 +104,7 @@ export function blogNav(blogWeek)
         console.log("not last")
         const li = document.createElement("li")
         const a = document.createElement("a")
-        a.innerText = `next blog - week ${blogItems[nextNum].name}`
+        a.innerText = `next blog - week ${blogItems[nextNum].week}`
         a.setAttribute("href", blogItems[nextNum].href)
         li.appendChild(a)
         ul.appendChild(li)
