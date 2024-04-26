@@ -19,10 +19,10 @@ const blogItems = [
 
 export function blogMenu()
 {
-    const div = document.querySelector("div")
+    const menu = document.getElementById("menu")
     const h2 = document.createElement("h2")
     h2.innerText = `List of blogs`
-    div.appendChild(h2)
+    menu.appendChild(h2)
     const ul = document.createElement("ul")
 
     for (let blogItem of blogItems){
@@ -38,7 +38,7 @@ export function blogMenu()
         }
     }
 
-    div.appendChild(ul) 
+    menu.appendChild(ul) 
 }
 
 export function blogNav(blogWeek)
@@ -50,7 +50,7 @@ export function blogNav(blogWeek)
     topNav.appendChild(a)
     
     
-    console.log(String(blogWeek))
+    //console.log(String(blogWeek))
     let preNum = blogWeek - 1
     let preFound = false
     while (!preFound){
@@ -80,8 +80,8 @@ export function blogNav(blogWeek)
     }
 
 
-    console.log("pre "+String(preNum))
-    console.log("next " +String(nextNum))
+    //console.log("pre "+String(preNum))
+    //console.log("next " +String(nextNum))
 
     const footerNav = document.querySelector("footer > nav")
 
@@ -89,7 +89,7 @@ export function blogNav(blogWeek)
 
     if (blogWeek > 1)
     {
-        console.log("not first")
+        //console.log("not first")
         const li = document.createElement("li")
         const a = document.createElement("a")
         a.innerText = `previous blog - week ${blogItems[preNum].week}`
@@ -101,7 +101,7 @@ export function blogNav(blogWeek)
     
     if (blogWeek < lastBlog)
     {
-        console.log("not last")
+        //console.log("not last")
         const li = document.createElement("li")
         const a = document.createElement("a")
         a.innerText = `next blog - week ${blogItems[nextNum].week}`

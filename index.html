@@ -8,6 +8,7 @@
     <title>WSOA3028A demo</title>
     <script type="module">import { initialise } from "./scripts/menu.js" 
     initialise("Home")</script>
+    <script type="module" src="scripts/footer.js"></script>
 </head>
 <style>
     body{
@@ -21,41 +22,8 @@
         color: #D63484;
         font-size: 300%;
     }
-
-    /* nav {
-        overflow: hidden;
-        background-color: #402B3A;
-    }
-
-    nav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    nav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    nav a.active {
-        background-color: #FF9BD2;
-        color: white;
-    }   */
 </style>
 <body>
-    
-    <!-- <nav>
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="Blog.html">Blog</a>
-        <a href="Essays.html">Essays</a>
-        <a href="Design.html">Design</a>
-    </nav> -->
 
     <header>
         <h1></h1>
@@ -68,6 +36,8 @@
         <p>this website will be my portfolio website</p>
     </main>
 
-    <footer>Footer</footer>
+    <footer>
+        <p class="h-card" id="footerCard"></p>
+    </footer>
 </body>
 </html>

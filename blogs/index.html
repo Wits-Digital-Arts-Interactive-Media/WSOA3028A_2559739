@@ -7,9 +7,10 @@
     <meta name="author" content="Kellen Strydom">
     <title>Blogs</title>
     <script type="module">import { initialise } from "../scripts/menu.js" 
-    initialise("Blogs")</script>
+    initialise("Blog")</script>
     <script type="module">import { blogMenu } from "../scripts/blog_nav.js" 
     blogMenu()</script>
+    <script type="module" src="../scripts/footer.js"></script>
 </head>
 <body>
 
@@ -22,9 +23,13 @@
         </nav>
     </header>
 
-    <div>
+    <nav id="menu">
 
-    </div>
+    </nav>
+
+    <footer>
+        <p class="h-card" id="footerCard"></p>
+    </footer>
     
 </body>
 </html>

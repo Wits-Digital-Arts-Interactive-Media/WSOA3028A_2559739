@@ -3,8 +3,8 @@ const root = "/WSOA3028A_2559739"
 
 const menuItems = [
     {name:"Home", href: `${root}/index.html`},
-    {name:"About", href: `${root}/about.html`},
-    {name:"Porfolio", href: `${root}/portfolio.html`},
+    {name:"About", href: `${root}/portfolio/profile.html`},
+    //{name:"Porfolio", href: `${root}/portfolio/profile.html`},
     {name:"Blog", href: `${root}/blogs/index.html`},
     {name:"Essays", href: `${root}/essays/index.html`},
     {name:"Design", href: `${root}/Design.html`},
