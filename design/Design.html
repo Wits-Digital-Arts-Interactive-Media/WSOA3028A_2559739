@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="desription" content="2024 WSOA3028 demo website">
+    <meta name="author" content="Kellen Strydom">
+    <title>Design</title>
+    <script type="module">import { initialise } from "../scripts/menu.js" 
+    initialise("Design")</script>
+    <script type="module" src="../scripts/footer.js"></script>
+    
 </head>
 <style>
     body{
@@ -18,7 +24,7 @@
         font-size: 300%;
     }
 
-    nav {
+    /* nav {
         overflow: hidden;
         background-color: #402B3A;
     }
@@ -40,23 +46,26 @@
     nav a.active {
         background-color: #FF9BD2;
         color: white;
-    }  
+    }   */
 </style>
 <body>
     
-    <nav>
+    <!-- <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="Blog.html">Blog</a>
         <a href="Essays.html">Essays</a>
         <a class="active" href="Design.html">Design</a>
-    </nav>
+    </nav> -->
     
     <header>
         <h1>
             Design
         </h1>
+        <nav>
+
+        </nav>
     </header>
 
     <main>
@@ -113,7 +122,10 @@
             <figcaption>Portfolio page wireframe</figcaption>
             <img src="images/PortfolioWireframe.png" alt="Picture showing the ui layout of the portfolio page" width="500">
         </figure>
-
+        
+        <footer>
+            <p class="h-card" id="footerCard"></p>
+        </footer>
     </main>
 </body>
 </html>

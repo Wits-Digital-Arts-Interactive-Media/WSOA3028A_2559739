@@ -9,11 +9,11 @@ const blogItems = [
     {name: "Semantic Markup", week:"3", href: `${root}/blogs/blog3.html`},
     {name: "IxD Process", week:"4", href: `${root}/blogs/blog4.html`},
     {name: "", week:"5", href: ``},
-    {name: "", week:"6", href: `${root}/blogs/blog6.html`},
+    {name: "UX and UX of Websites", week:"6", href: `${root}/blogs/blog6.html`},
     {name: "", week:"7", href: ``},
-    {name: "", week:"8", href: `${root}/blogs/blog8.html`},
-    {name: "", week:"9", href: `${root}/blogs/blog9.html`},
-    {name: "", week:"10", href: `${root}/blogs/blog10.html`},
+    {name: "Ethical Dilemmas in Software Engineering", week:"8", href: `${root}/blogs/blog8.html`},
+    {name: "Internet is a human right", week:"9", href: `${root}/blogs/blog9.html`},
+    {name: "Fourth Industrial Revolution", week:"10", href: `${root}/blogs/blog10.html`},
 
 ]
 
@@ -31,7 +31,7 @@ export function blogMenu()
         {
             const li = document.createElement("li")
             const a = document.createElement("a")
-            a.innerText = `Week ${blogItem.week}`
+            a.innerText = `Week ${blogItem.week} - ${blogItem.name}`
             a.setAttribute("href", blogItem.href)
             li.appendChild(a)
             ul.appendChild(li)

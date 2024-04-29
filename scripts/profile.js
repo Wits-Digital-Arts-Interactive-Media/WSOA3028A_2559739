@@ -12,3 +12,4 @@ hobbyBtn.addEventListener("click", hobbyFunction);
 function hobbyFunction() {
   document.getElementById("btnDisplay").innerHTML = `I play hockey`;
 }
+
