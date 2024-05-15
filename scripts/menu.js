@@ -16,28 +16,32 @@ export function initialise(currentPage)
     const h1 = document.querySelector("header > h1")
     h1.innerText = document.title
     const nav = document.querySelector("header > nav")
-    const ul = document.createElement("ul")
+    //const ul = document.createElement("ul")
 
     for (let menuItem of menuItems){
-        const li = document.createElement("li")
+        //const li = document.createElement("li")
         if (currentPage != menuItem.name)
         {
             const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            li.appendChild(a)
+            nav.appendChild(a)
             
         }
         else
         {
-            li.innerText = menuItem.name
+            const a = document.createElement("a")
+            a.setAttribute("class","active")
+            a.innerText = menuItem.name
+            a.setAttribute("href", menuItem.href)
+            nav.appendChild(a)
         }
 
-        ul.appendChild(li)
+        //ul.appendChild(li)
         
     }
 
-    nav.appendChild(ul) 
+    //nav.appendChild(ul) 
 
 }
 
