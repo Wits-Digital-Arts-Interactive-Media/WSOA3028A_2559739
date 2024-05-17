@@ -14,6 +14,9 @@ const blogItems = [
     {name: "Ethical Dilemmas in Software Engineering", week:"8", href: `${root}/blogs/blog8.html`},
     {name: "Internet is a human right", week:"9", href: `${root}/blogs/blog9.html`},
     {name: "Fourth Industrial Revolution", week:"10", href: `${root}/blogs/blog10.html`},
+    {name: "Javascript Reflection", week:"11", href: `${root}/blogs/blog11.html`},
+    {name: "www", week:"12", href: `${root}/blogs/blog11.html`},
+    {name: "ddd", week:"13", href: `${root}/blogs/blog11.html`},
 
 ]
 
