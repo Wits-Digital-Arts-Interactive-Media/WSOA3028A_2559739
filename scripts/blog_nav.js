@@ -87,18 +87,19 @@ export function blogNav(blogWeek)
     //console.log("next " +String(nextNum))
 
     const botnav = document.getElementById("botnav")
-
-    const ul = document.createElement("ul")
+    botnav.className = "botnav"
+    //const ul = document.createElement("ul")
 
     if (blogWeek > 1)
     {
         //console.log("not first")
-        const li = document.createElement("li")
+        //const li = document.createElement("li")
         const a = document.createElement("a")
         a.innerText = `previous blog - week ${blogItems[preNum].week}`
         a.setAttribute("href", blogItems[preNum].href)
-        li.appendChild(a)
-        ul.appendChild(li)
+        //li.appendChild(a)
+        //ul.appendChild(li)
+        botnav.appendChild(a)
     }
 
     
@@ -109,10 +110,11 @@ export function blogNav(blogWeek)
         const a = document.createElement("a")
         a.innerText = `next blog - week ${blogItems[nextNum].week}`
         a.setAttribute("href", blogItems[nextNum].href)
-        li.appendChild(a)
-        ul.appendChild(li)
+        //li.appendChild(a)
+        //ul.appendChild(li)
+        botnav.appendChild(a)
     }
         
-    botnav.appendChild(ul)
+    //botnav.appendChild(ul)
 
 }
