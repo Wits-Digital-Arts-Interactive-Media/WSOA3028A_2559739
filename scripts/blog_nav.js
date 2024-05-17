@@ -83,7 +83,7 @@ export function blogNav(blogWeek)
     //console.log("pre "+String(preNum))
     //console.log("next " +String(nextNum))
 
-    const footerNav = document.querySelector("footer > nav")
+    const botnav = document.getElementById("botnav")
 
     const ul = document.createElement("ul")
 
@@ -110,6 +110,6 @@ export function blogNav(blogWeek)
         ul.appendChild(li)
     }
         
-    footerNav.appendChild(ul)
+    botnav.appendChild(ul)
 
 }
