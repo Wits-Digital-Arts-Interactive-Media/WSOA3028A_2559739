@@ -1,0 +1,49 @@
+h1{
+    margin-bottom: 0;
+}
+
+.InfoDisplay{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.InfoDisplay :nth-child(odd) button {
+    background-color: #97d9ff;
+}
+
+.InfoDisplay :nth-child(2n) button {
+    background-color: #d58dff;
+}
+
+
+.display{
+    padding-bottom: 10pt;
+}
+
+.display button{
+    height: 30pt;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20pt;
+}
+
+.display button:hover{
+    background-color: ghostwhite;
+}
+
+.display p{
+    margin-top: 4pt;
+    text-align: center;
+
+    font-size: medium;
+}
+
+.profilephoto {
+   
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    alt: "a professional photo of Kellen Strydom";
+}

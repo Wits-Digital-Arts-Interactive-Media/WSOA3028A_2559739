@@ -1,6 +1,6 @@
 const root = "/WSOA3028A_2559739"
 
-const lastBlog = 10
+const lastBlog = 14
 
 const blogItems = [
     {name: "", week:"0", href: ``},
@@ -15,8 +15,8 @@ const blogItems = [
     {name: "Internet is a human right", week:"9", href: `${root}/blogs/blog9.html`},
     {name: "Fourth Industrial Revolution", week:"10", href: `${root}/blogs/blog10.html`},
     {name: "Javascript Reflection", week:"11", href: `${root}/blogs/blog11.html`},
-    {name: "www", week:"12", href: `${root}/blogs/blog11.html`},
-    {name: "ddd", week:"13", href: `${root}/blogs/blog11.html`},
+    {name: "www", week:"12", href: `${root}/blogs/blog12.html`},
+    {name: "ddd", week:"13", href: `${root}/blogs/blog13.html`},
 
 ]
 
@@ -27,6 +27,7 @@ export function blogMenu()
     h2.innerText = `List of blogs`
     menu.appendChild(h2)
     const ul = document.createElement("ul")
+    ul.className = 'blogMenu'
 
     for (let blogItem of blogItems){
         
@@ -53,7 +54,7 @@ export function blogNav(blogWeek)
     topNav.appendChild(a)
     
     
-    //console.log(String(blogWeek))
+    console.log(String(blogWeek))
     let preNum = blogWeek - 1
     let preFound = false
     while (!preFound){
@@ -83,8 +84,8 @@ export function blogNav(blogWeek)
     }
 
 
-    //console.log("pre "+String(preNum))
-    //console.log("next " +String(nextNum))
+    console.log("pre "+String(preNum))
+    console.log("next " +String(nextNum))
 
     const botnav = document.getElementById("botnav")
     botnav.className = "botnav"
@@ -95,7 +96,7 @@ export function blogNav(blogWeek)
         //console.log("not first")
         //const li = document.createElement("li")
         const a = document.createElement("a")
-        a.innerText = `previous blog - week ${blogItems[preNum].week}`
+        a.innerText = `⏪previous blog - week ${blogItems[preNum].week}`
         a.setAttribute("href", blogItems[preNum].href)
         //li.appendChild(a)
         //ul.appendChild(li)
@@ -108,7 +109,7 @@ export function blogNav(blogWeek)
         //console.log("not last")
         const li = document.createElement("li")
         const a = document.createElement("a")
-        a.innerText = `next blog - week ${blogItems[nextNum].week}`
+        a.innerText = `next blog - week ${blogItems[nextNum].week}⏩`
         a.setAttribute("href", blogItems[nextNum].href)
         //li.appendChild(a)
         //ul.appendChild(li)

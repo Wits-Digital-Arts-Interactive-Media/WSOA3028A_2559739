@@ -8,19 +8,27 @@ h1 {
     text-align: center;
     color: #D63484;
     font-size: 7vw;
-    margin-top: 0.5vw;
+    top: 10%;
 }
+
+/* h1:hover::before{
+    content: "✨";
+}
+h1:hover::after{
+    content: "✨";
+} */
 
 article {
-    width: 90%;
-    padding-left: 5%;
+    width: 80%;
+    margin-left: 10%;
 }
 
-h1.bolgtitle {
-    font-size: 5vw;
-}
 
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     overflow: hidden;
     background-color: #402B3A;
     
@@ -30,7 +38,7 @@ nav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    width: 16.66%;
+    width: 16.666666666%;
     padding-bottom: 1vw;
     padding-top: 1vw;
     
@@ -48,24 +56,5 @@ nav a.active {
     color: black;
 } 
 
-.botnav{
-    text-align: center;
-}
 
-.botnav a{
-    /* float: none; */
 
-    background-color: #402B3A;
-    color: #f2f2f2;
-    text-align: center;
-    width: 20%;
-    padding: 1vw 3vw;
-    
-    text-decoration: none;
-    font-size: 1vw;
-}
-
-.botnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
