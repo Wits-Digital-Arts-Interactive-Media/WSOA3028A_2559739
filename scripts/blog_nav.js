@@ -1,6 +1,6 @@
 const root = "/WSOA3028A_2559739"
 
-const lastBlog = 14
+const lastBlog = 13
 
 const blogItems = [
     {name: "", week:"0", href: ``},
@@ -16,6 +16,7 @@ const blogItems = [
     {name: "Fourth Industrial Revolution", week:"10", href: `${root}/blogs/blog10.html`},
     {name: "Javascript Reflection", week:"11", href: `${root}/blogs/blog11.html`},
     {name: "www", week:"12", href: `${root}/blogs/blog12.html`},
+    {name: "www", week:"12", href: `${root}/blogs/blog13.html`},
     {name: "ddd", week:"13", href: `${root}/blogs/blog13.html`},
 
 ]
@@ -72,7 +73,7 @@ export function blogNav(blogWeek)
     let nextNum = blogWeek + 1
     let nextFound = false
     while (!nextFound){
-        if (nextNum <1) nextFound = true
+        if (nextNum > lastBlog) nextFound = true
         if (!nextFound && blogItems[nextNum].href == ``)
         {
             nextNum = nextNum + 1
@@ -115,7 +116,12 @@ export function blogNav(blogWeek)
         //ul.appendChild(li)
         botnav.appendChild(a)
     }
-        
-    //botnav.appendChild(ul)
+
+}
+
+
+export function blogDropDown()
+{
+    const blog = document.querySelector("header > nav").children[3]
 
 }
