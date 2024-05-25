@@ -1,4 +1,6 @@
 body{
+    margin-left: 0;
+    width: 100%;
     background-color: #F8F4EC; 
     color: #402B3A;
     font-family: Georgia, serif;
@@ -39,8 +41,10 @@ nav a {
     color: #f2f2f2;
     text-align: center;
     width: 16.666666666%;
+    height: 8%;
     padding-bottom: 1vw;
     padding-top: 1vw;
+
     
     text-decoration: none;
     font-size: 2.5vw;

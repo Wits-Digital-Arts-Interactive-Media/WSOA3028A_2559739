@@ -1,6 +1,56 @@
+/* html{
+    --s: 222px;
+    --c1: #7f727b;
+    --c2: #d6b4c2;
+    --c3: #baa0ab;
+    
+    --_g: var(--c1) 10%,var(--c2) 10.5% 19%,#0000 19.5% 80.5%,var(--c2) 81% 89.5%,var(--c3) 90%;
+    --_c: from -90deg at 37.5% 50%,#0000 75%;
+    --_l1: linear-gradient(145deg,var(--_g));
+    --_l2: linear-gradient( 35deg,var(--_g));
+    background: 
+      var(--_l1), var(--_l1) calc(var(--s)/2) var(--s),
+      var(--_l2), var(--_l2) calc(var(--s)/2) var(--s),
+      conic-gradient(var(--_c),var(--c1) 0) calc(var(--s)/8) 0,
+      conic-gradient(var(--_c),var(--c3) 0) calc(var(--s)/2) 0,
+      linear-gradient(90deg,var(--c3) 38%,var(--c1) 0 50%,var(--c3) 0 62%,var(--c1) 0);
+    background-size: var(--s) calc(2*var(--s)/3);
+  } */
+
+  body {
+    --s: 100px; /* control the size*/
+    --c1: #f8b195;
+    --c2: #355c7d;
+    
+    --_g: 
+       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+    background:
+      radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+      radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+      var(--c1);
+    background-size: var(--s) var(--s);
+  }
+
 h1.bolgtitle {
+    color: #ffffff;
     margin-top: 5%;
     font-size: 5vw;
+}
+
+article {
+    background-color: #F8F4EC;
+    width: 80%;
+    margin-left: 10%;
+}
+
+article p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+article h2, article h3, article h4, article h5, article figure{
+    margin-left: 5%;
 }
 
 .blogMenu :nth-child(odd) {
@@ -27,3 +77,4 @@ h1.bolgtitle {
     background-color: #ddd;
     color: black;
 }
+
