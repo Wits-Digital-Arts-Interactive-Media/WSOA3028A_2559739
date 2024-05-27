@@ -13,8 +13,12 @@ const menuItems = [
 export function initialise(currentPage)
 {
     console.log("worked");
-    const h1 = document.querySelector("header > h1")
-    h1.innerText = document.title
+    if (currentPage != "Home")
+    {
+        const h1 = document.querySelector("header > h1")
+        h1.innerText = document.title
+    }
+    
     const nav = document.querySelector("header > nav")
     //const ul = document.createElement("ul")
 

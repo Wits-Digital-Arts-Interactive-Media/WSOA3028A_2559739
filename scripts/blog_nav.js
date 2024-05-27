@@ -88,33 +88,30 @@ export function blogNav(blogWeek)
     console.log("pre "+String(preNum))
     console.log("next " +String(nextNum))
 
-    const botnav = document.getElementById("botnav")
-    botnav.className = "botnav"
+    
     //const ul = document.createElement("ul")
 
     if (blogWeek > 1)
     {
-        //console.log("not first")
-        //const li = document.createElement("li")
+        const leftnav = document.getElementById("leftnav")
+
         const a = document.createElement("a")
         a.innerText = `⏪previous blog - week ${blogItems[preNum].week}`
         a.setAttribute("href", blogItems[preNum].href)
-        //li.appendChild(a)
-        //ul.appendChild(li)
-        botnav.appendChild(a)
+        a.className ="navbutton"
+        leftnav.appendChild(a)
     }
 
     
     if (blogWeek < lastBlog)
     {
-        //console.log("not last")
-        const li = document.createElement("li")
+        const rightnav = document.getElementById("rightnav")
+        
         const a = document.createElement("a")
         a.innerText = `next blog - week ${blogItems[nextNum].week}⏩`
         a.setAttribute("href", blogItems[nextNum].href)
-        //li.appendChild(a)
-        //ul.appendChild(li)
-        botnav.appendChild(a)
+        a.className ="navbutton"
+        rightnav.appendChild(a)
     }
 
 }

@@ -1,0 +1,42 @@
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding-bottom: 20pt;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+  }
+
+.left > a > img{
+    margin-left: 70% ;
+    width: 25%;
+}
+
+.left > img{
+    margin-left: 70% ;
+    width: 25%;
+}
+
+.left > h2{
+    text-align: right;
+    margin-right: 20pt;
+}
+
+.left > p{
+    margin-left: 25%;
+}
+
+.right > a > img{
+    width: 25%;
+}
+
+.column > p{
+    width: 75%;
+}

@@ -6,6 +6,7 @@ body{
 
 h1{
     margin-bottom: 0;
+    text-align: left;
 }
 
 .info-display{
@@ -26,15 +27,14 @@ h1{
 
 
 .display{
-    margin-left: 25%;
-    width: 50%;
+    width: 100%;
     padding-bottom: 10pt;
 }
 
 .display button{
     height: 30pt;
-    width: 50%;
-    margin-left: 25%;
+    width: 200pt;
+    
     font-size: 20pt;
 }
 
@@ -44,9 +44,9 @@ h1{
 
 .display p{
     margin-top: 4pt;
-    text-align: center;
-
-    font-size: medium;
+    width: 200pt;
+    text-align: left;
+    font-size: large;
 }
 
 .image-container {
@@ -79,10 +79,42 @@ h1{
 
 .profilephoto {
    
-    width: 30%;
-    height: auto;
-    margin-left: 35%;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-    alt: "a professional photo of Kellen Strydom";
+    width: 70%;
+    border-radius: 50%;
+    margin-left: 12.5%;
+    
 }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 20%;
+    padding: 10px;
+
+  }
+
+  .column2
+  {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column1 {
+      width: 100%;
+      flex: 50%;
+    }
+    .column2 {
+        width: 100%;
+        flex: 50%;
+      }
+    }

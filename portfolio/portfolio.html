@@ -6,6 +6,7 @@
     <meta name="description" content="portfolio work example">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../styles/mainstyle.css">
+    <link rel="stylesheet" href="../styles/portfoliostyle.css">
     <script type="module">import { initialise } from "../scripts/menu.js" 
         initialise("Portfolio")</script>
     <script type="module" src="../scripts/footer.js"></script>
@@ -19,14 +20,47 @@
         </nav>
         <h1>Portfolio</h1>
     </header>
+
     
-    <main>
-        <h2>My Github</h2>
-        <p><a href="https://github.com/kellenstrydom/"><img class="u-logo" src="../images/gitlogo.jpeg" alt="cool kirby with sunglasses" title="https://github.com/kellenstrydom/"></a></p>
-        <h2>examples</h2>
-        <p>my example picture</p>
-        <img src="../images/coolpic.jpeg" width="500" height="600" alt="a real sick pic my dude" title="cool bunny">
-    </main>
+
+
+    <div class="row">
+        <div class="column left">
+            <a href="https://github.com/kellenstrydom/" target="_blank"><img class="u-logo" src="../images/GitHubLogo.png" alt="The GitHub logo" title="https://github.com/kellenstrydom/"></a>
+        </div>
+
+        <div class="column right">
+            <h2>My itch.io</h2>
+            <p>
+                This is my itch.io. It is currently bare, but we will fill it very soon.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <h2>My Github</h2>
+            <p>
+                This is my github. This is where you will see all the projects that i have worked on throughout my university career
+            </p>
+        </div>
+        <div class="column right" >
+            <a href="https://kellenstrydom.itch.io" target="_blank"><img class="u-logo" src="../images/ItchLogo.png" alt="The itch io logo" title="https://kellenstrydom.itch.io/"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column left" >
+            <img src="../images/coolpic.jpeg" alt="a real sick pic my dude" title="cool bunny">
+        </div>
+        <div class="column right" >
+            <h2>Example work</h2>
+            <p>
+                This is where examples of my work would go.
+            </p>
+        </div>
+    </div>
+    
     
     <footer>
         <p class="h-card" id="footerCard"></p>

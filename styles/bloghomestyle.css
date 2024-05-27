@@ -1,0 +1,22 @@
+h2{
+    margin-left: 20%;
+
+}
+ul{
+    margin-left: 20%;
+}
+
+
+
+li{
+    list-style-type: lower-roman;
+    padding: 5px;
+    margin: 5px;
+    width: 200pt;
+    border: solid 1px white;
+    background-color: #ab94b33b;
+}
+
+
+
+

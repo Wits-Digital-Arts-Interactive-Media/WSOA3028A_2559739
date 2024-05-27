@@ -1,4 +1,4 @@
-body {
+html {
     --s: 222px; /* control the size*/
     --c1: #7f727b;
     --c2: #d6b4c2;
@@ -16,9 +16,15 @@ body {
       linear-gradient(90deg,var(--c3) 38%,var(--c1) 0 50%,var(--c3) 0 62%,var(--c1) 0);
     background-size: var(--s) calc(2*var(--s)/3);
   }
+body
+{
+    background-color: #F8F4EC;
+    width: 80%;
+    margin-left: 10%;
+    padding-block-end: 20pt;
+}
 
 h1 {
-    color: #ffffff;
     margin-top: 5%;
     font-size: 5vw;
 }
