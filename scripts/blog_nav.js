@@ -15,9 +15,8 @@ const blogItems = [
     {name: "Internet is a human right", week:"9", href: `${root}/blogs/blog9.html`},
     {name: "Fourth Industrial Revolution", week:"10", href: `${root}/blogs/blog10.html`},
     {name: "Javascript Reflection", week:"11", href: `${root}/blogs/blog11.html`},
-    {name: "www", week:"12", href: `${root}/blogs/blog12.html`},
-    {name: "www", week:"12", href: `${root}/blogs/blog13.html`},
-    {name: "ddd", week:"13", href: `${root}/blogs/blog13.html`},
+    {name: "I am Learning CSS", week:"12", href: `${root}/blogs/blog12.html`},
+    {name: "Internet Ethics: Privacy, Anonymity, and Behaviour", week:"13", href: `${root}/blogs/blog13.html`},
 
 ]
 
