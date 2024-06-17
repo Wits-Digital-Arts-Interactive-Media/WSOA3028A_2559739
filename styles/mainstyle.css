@@ -10,7 +10,7 @@ body{
 h1 {
     text-align: center;
     color: #D63484;
-    font-size: 7vw;
+    font-size: 60px;
     top: 10%;
 }
 
@@ -37,13 +37,13 @@ nav a {
     color: #f2f2f2;
     text-align: center;
     width: 16.666666666%;
-    height: 8%;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+    height: 30px;
+    padding-bottom: 12px;
+    padding-top: 12px;
 
     
     text-decoration: none;
-    font-size: 2.5vw;
+    font-size: 25px;
 }
 
 nav a:hover {
