@@ -1,42 +1,57 @@
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding-bottom: 20pt;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    width: 100%;
-  }
-
-.left > a > img{
-    margin-left: 70% ;
-    width: 25%;
+.row
+{
+    display: flex;
 }
 
-.left > img{
-    margin-left: 70% ;
-    width: 25%;
+
+.column {
+    float: left;
+    flex: 50%;
+    padding: 50px 10px;
+}
+
+
+.icon {
+    padding-top: 24px;
+    width: 118px;
+}
+
+.left {
+    text-align: right;
 }
 
 .left > h2{
     text-align: right;
-    margin-right: 20pt;
+    margin-right: 0;
 }
 
 .left > p{
-    margin-left: 25%;
+    margin-left: 5%;
 }
 
-.right > a > img{
-    width: 25%;
+.right > p{
+    margin-right: 5%;
 }
 
-.column > p{
-    width: 75%;
+h2 {
+    padding-bottom: 0;
+    margin-bottom: -4px;
+}
+
+@media only screen and (max-width: 1124px) {
+    .r1 .left{
+        flex: 30%;
+    }
+    .r1 .right{
+        flex: 70%;
+    }
+
+    .r2 .left{
+        flex: 70%;
+    }
+    .r2 .right{
+        flex: 30%;
+    }
+
+
 }

@@ -94,10 +94,13 @@ export function blogNav(blogWeek)
     {
         const leftnav = document.getElementById("leftnav")
 
-        const a = document.createElement("a")
-        a.innerText = `⏪previous blog - week ${blogItems[preNum].week}`
+        const a = document.createElement("a");
+        const emoji = document.createElement("span");
+        emoji.className = "emoji";
+        emoji.innerText = `⏪`;
+        leftnav.appendChild(emoji);
+        a.innerText = `previous blog - week ${blogItems[preNum].week}`
         a.setAttribute("href", blogItems[preNum].href)
-        a.className ="navbutton"
         leftnav.appendChild(a)
     }
 
@@ -107,10 +110,13 @@ export function blogNav(blogWeek)
         const rightnav = document.getElementById("rightnav")
         
         const a = document.createElement("a")
-        a.innerText = `next blog - week ${blogItems[nextNum].week}⏩`
+        a.innerText = `next blog - week ${blogItems[nextNum].week}`
         a.setAttribute("href", blogItems[nextNum].href)
-        a.className ="navbutton"
         rightnav.appendChild(a)
+        const emoji = document.createElement("span");
+        emoji.className = "emoji";
+        emoji.innerText = `⏩`;
+        rightnav.appendChild(emoji);
     }
 
 }

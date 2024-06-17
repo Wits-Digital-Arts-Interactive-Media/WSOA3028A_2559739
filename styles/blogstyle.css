@@ -13,8 +13,13 @@ html {
     background-size: var(--s) var(--s);
 }
 
-body
+body{
+    background-color: transparent;
+}
+
+.container
 {
+    margin-top: 0;
     background-color: #F8F4EC;
     width: 80%;
     margin-left: 10%;
@@ -22,8 +27,8 @@ body
 }
 
 h1.bolgtitle {
-    margin-top: 8%;
-    font-size: 5vw;
+    padding-top: 4px;
+    font-size: 60px;
 }
 
 
@@ -31,6 +36,10 @@ article p{
     margin-left: 5%;
     margin-right: 5%;
     font-size: large;
+}
+
+article{
+    padding-bottom: 5px;
 }
 
 article h2, article h3, article h4, article h5, article figure{
@@ -42,29 +51,29 @@ article h2, article h3, article h4, article h5, article figure{
 }
 
 .rightnav{
-    position: fixed;
-    width: 250pt;
     margin-right: 0;
-    right: 0;
-    bottom: 50pt;
+    right: 5px;
 }
 
 .leftnav{
-    position: fixed;
-    width: 250pt;
-    left: 10pt;
-    bottom: 50pt;
+    left: 5px;
 }
 
 .navbutton{
     background-color: #402B3A;
     color: #f2f2f2;
     text-align: center;
-    width: 100%;
-    padding: 1vw 3vw;
-    
+    position: fixed;
+    width: 15%;
+    bottom: 50px;
+    padding: 8px 0px;
+    font-size: 16px;
+    content: "";
+}
+
+.navbutton a{
     text-decoration: none;
-    font-size: 1;
+    color: #f2f2f2;
 }
 
 .navbutton:hover {
@@ -72,17 +81,19 @@ article h2, article h3, article h4, article h5, article figure{
     color: black;
 }
 
-
-/* .botnav:nth-child(odd){
-    position: relative;
-    color: red;
-    right: 10pt;
-    bottom: 10pt;
+@media only screen and (max-width: 768px) {
+.container{
+    width: 100%;
+    margin-left: 0%;
 }
 
-.botnav:nth-child(even){
-    position: relative;
-    left: blue;
-    right: 10pt;
-    bottom: 10pt;
-} */
+.navbutton a{
+    visibility: hidden;
+    font-size: 0;
+}
+
+.navbutton{
+    width: 10%;
+}
+
+}
