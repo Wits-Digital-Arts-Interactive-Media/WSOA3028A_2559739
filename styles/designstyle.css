@@ -1,0 +1,77 @@
+.c {
+    font-size: larger;
+    border: solid 1px black;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.s{
+    background-color: #402B3A;
+    color: #f2f2f2;
+}
+
+.t{
+    background-color: #FF9BD2;
+    color: black;
+}
+
+.font-showcase{
+    font-size: larger;
+}
+
+figcaption{
+    text-align: center;
+}
+
+
+
+.wireframe-display > figure{
+    text-align: center;
+    flex: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+figure{
+    padding-top: 25px;
+}
+
+.wireframe-display > figure > img{
+    width: 500px;
+}
+
+
+
+.wireframe-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.info-structure{
+    width: 700px;
+}
+
+.userflow{
+    width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    article{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .wireframe-display figure{
+        flex: 100%;
+    }
+    .wireframe-display > figure > img{
+        width: 100%;
+    }
+}

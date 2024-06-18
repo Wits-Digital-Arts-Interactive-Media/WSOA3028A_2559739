@@ -47,6 +47,11 @@ article > h2, article > h3, article > h4, article > h5, article > figure{
     margin-left: 5%;
 }
 
+figure{
+    text-align: center;
+}
+
+
 .blogMenu :nth-child(odd) {
     background-color: #ddd;
 }

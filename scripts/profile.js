@@ -64,3 +64,14 @@ function sickFunction() {
   else
     p.innerHTML = `As of right now I am sick. It is the flu. Watch this space for updates`;
 }
+
+const betterBtn = document.getElementById("better");
+betterBtn.addEventListener("click", betterFunction);
+
+function betterFunction() {
+  const p = document.getElementById("better").parentElement.children[1]
+  if (p.innerHTML != '')
+    p.innerHTML = ''
+  else
+    p.innerHTML = `I have made a full recovery. It was a rough one. Thank you for checking back.`;
+}
