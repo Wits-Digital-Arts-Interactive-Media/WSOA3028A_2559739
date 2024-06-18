@@ -6,7 +6,7 @@ function fillFooter()
 
     let imageSrc;
     if  (document.title == "Home"){
-        imageSrc = "/images/logo.png";
+        imageSrc = "./images/logo.png";
     }
     else{
         imageSrc = "../images/logo.png"
