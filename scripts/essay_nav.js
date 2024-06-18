@@ -2,6 +2,7 @@ const root = "/WSOA3028A_2559739"
 
 const essayItems = [
     {name:"UX & UI Analysis - temu.com", href: `${root}/essays/essay1.html`},
+    {name:"Digital Colonialism", href: `${root}/essays/essay2.html`},    
 ]
 
 function essayMenu()
