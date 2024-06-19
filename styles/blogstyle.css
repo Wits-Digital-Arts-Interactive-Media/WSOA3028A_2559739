@@ -87,20 +87,28 @@ figure{
     color: black;
 }
 
+@media only screen and (max-width: 870px){
+    article > figure > img{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-.container{
-    width: 100%;
-    margin-left: 0%;
-}
+    .container{
+        width: 100%;
+        margin-left: 0%;
+    }
 
-.navbutton a{
-    visibility: hidden;
-    font-size: 0;
-}
 
-.navbutton{
-    width: 10%;
-}
+    .navbutton a{
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .navbutton{
+        width: 10%;
+    }
+
 
 }
 

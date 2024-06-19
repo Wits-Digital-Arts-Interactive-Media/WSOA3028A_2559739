@@ -7,10 +7,10 @@ const essayItems = [
 
 function essayMenu()
 {
-    const div = document.querySelector("div")
+    const menu = document.getElementById("menu")
     const h2 = document.createElement("h2")
     h2.innerText = `List of essays`
-    div.appendChild(h2)
+    menu.appendChild(h2)
     const ul = document.createElement("ul")
 
     let count = 0
@@ -24,7 +24,7 @@ function essayMenu()
         ul.appendChild(li)
     }
 
-    div.appendChild(ul) 
+    menu.appendChild(ul) 
 }
 
 essayMenu()
