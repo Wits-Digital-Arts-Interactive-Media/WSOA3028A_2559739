@@ -6,15 +6,22 @@ ul{
     margin-left: 20%;
 }
 
-
+.menu{
+    text-align: center;
+}
 
 li{
-    list-style-type: lower-roman;
+    margin-bottom: 16px;
+    height: 30px;
+    list-style-type: none;
+    width: 400px;
+    background-color: #b995c570;
+    /* list-style-type: lower-roman;
     padding: 5px;
     margin: 5px;
     width: 200pt;
     border: solid 1px white;
-    background-color: #ab94b33b;
+    background-color: #ab94b33b; */
 }
 
 
