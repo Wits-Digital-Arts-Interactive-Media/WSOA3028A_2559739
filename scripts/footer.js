@@ -15,7 +15,7 @@ function fillFooter()
     const card = document.getElementById("footerCard");
     
     card.innerHTML = `
-    <h4>Contact me</h4>
+    <h3>Contact me</h3>
     <img class="u-photo" src="${imageSrc}" width="100" height="120" alt="a professional photo of Kellen Strydom"/>
     <br>
     <a class="p-name u-url" target = "_blank" href="../portfolio/profile.html">Kellen Strydom</a>

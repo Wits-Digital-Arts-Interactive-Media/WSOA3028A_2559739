@@ -48,6 +48,10 @@ export function blogMenu()
 export function blogNav(blogWeek)
 {
     const topNav = document.querySelector("header > nav")
+    const home = document.createElement("a")
+    home.innerText = `Home`
+    home.setAttribute("href", `${root}/index.html`);
+    topNav.appendChild(home)
     const a = document.createElement("a")
     a.innerText = `Blog page`
     a.setAttribute("href", `${root}/blogs/index.html`)
@@ -98,9 +102,12 @@ export function blogNav(blogWeek)
         const emoji = document.createElement("span");
         emoji.className = "emoji";
         emoji.innerText = `⏪`;
-        leftnav.appendChild(emoji);
-        a.innerText = `previous blog - week ${blogItems[preNum].week}`
+        a.appendChild(emoji);
+        const text = document.createElement("span");
+        text.className = " navtext";
+        text.innerText = `week ${blogItems[preNum].week} `
         a.setAttribute("href", blogItems[preNum].href)
+        a.appendChild(text)
         leftnav.appendChild(a)
     }
 
@@ -108,15 +115,18 @@ export function blogNav(blogWeek)
     if (blogWeek < lastBlog)
     {
         const rightnav = document.getElementById("rightnav")
-        
+
         const a = document.createElement("a")
-        a.innerText = `next blog - week ${blogItems[nextNum].week}`
+        const text = document.createElement("span");
+        text.className = " navtext";
+        text.innerText = `week ${blogItems[nextNum].week} `
         a.setAttribute("href", blogItems[nextNum].href)
-        rightnav.appendChild(a)
+        a.appendChild(text)
         const emoji = document.createElement("span");
         emoji.className = "emoji";
         emoji.innerText = `⏩`;
-        rightnav.appendChild(emoji);
+        a.appendChild(emoji);
+        rightnav.appendChild(a)
     }
 
 }

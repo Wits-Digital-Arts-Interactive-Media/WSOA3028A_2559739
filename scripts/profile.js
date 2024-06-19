@@ -75,3 +75,15 @@ function betterFunction() {
   else
     p.innerHTML = `I have made a full recovery. It was a rough one. Thank you for checking back.`;
 }
+
+
+const earBtn = document.getElementById("ear");
+earBtn.addEventListener("click", earFunction);
+
+function earFunction() {
+  const p = document.getElementById("ear").parentElement.children[1]
+  if (p.innerHTML != '')
+    p.innerHTML = ''
+  else
+    p.innerHTML = `I was recently hit on my left ear by a hockey ball at training. It tore my cartilage. I went to a plastic surgeon to stitch it up, i will post updates`;
+}

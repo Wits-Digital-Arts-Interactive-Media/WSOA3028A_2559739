@@ -56,16 +56,17 @@ figure{
     background-color: #ddd;
 }
 
-.rightnav{
+.rightnav a{
     margin-right: 0;
     right: 5px;
 }
 
-.leftnav{
+.leftnav a{
     left: 5px;
 }
 
-.navbutton{
+.navbutton a{
+    display: block;
     background-color: #402B3A;
     color: #f2f2f2;
     text-align: center;
@@ -82,7 +83,7 @@ figure{
     color: #f2f2f2;
 }
 
-.navbutton:hover {
+.navbutton a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -100,12 +101,17 @@ figure{
     }
 
 
-    .navbutton a{
+    .navtext{
         visibility: hidden;
         font-size: 0;
     }
 
-    .navbutton{
+    .emoji
+    {
+        font-size: x-large;
+    }
+
+    .navbutton a{
         width: 10%;
     }
 
