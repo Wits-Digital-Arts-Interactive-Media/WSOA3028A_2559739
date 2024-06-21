@@ -1,23 +1,53 @@
-// if (typeof(Storage) !== "undefined") 
-// {
-//   if (localStorage.homedisplay) {
-//     if (homedisplay == 'A')
-//     {
-//       DisplayAdvice();
-//     }
-//     else{
-//       DisplayFact();
-//     }
-//   } 
-//   else {
-//     localStorage.clickcount = 1;
-//   }
-//   document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-// } 
-// else {
-//   document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-// }
+const typeswitch = document.getElementById("typeswitch");
+typeswitch.addEventListener("click",SwitchDisplayType)
 
+
+
+const div = document.querySelector("div");
+const textbox = document.createElement("section");
+textbox.className = "textbox";
+div.appendChild(textbox);
+
+
+
+if (typeof(Storage) !== "undefined") 
+{
+  if (localStorage.homedisplay) {
+    ButtonText();
+  }
+  else
+  {
+    localStorage.homedisplay = 'A';
+  }
+  console.log(`show type: ${localStorage.homedisplay}`);
+  TypeDisplay();
+  
+} 
+else {
+  DisplayAdvice();
+}
+
+function ButtonText()
+{
+  if (localStorage.homedisplay == 'A')
+    {
+      typeswitch.innerText = "Advice:";
+    }
+    else{
+      typeswitch.innerText = "Fact:";
+    }
+}
+
+function TypeDisplay()
+{
+  if (localStorage.homedisplay == 'A')
+    {
+      DisplayAdvice();
+    }
+    else{
+      DisplayFact();
+    }
+}
 
 
 function DisplayFact(){
@@ -41,16 +71,25 @@ function DisplayAdvice(){
   });
 }
 
-
-
 function DisplayText(text){
-  const div = document.querySelector("div");
-  const textbox = document.createElement("section");
-  textbox.className = "textbox"
+
+  
+  
   textbox.innerText = text;
-  div.appendChild(textbox);
+  
 }
 
-//DisplayAdvice();
-DisplayFact();
+function SwitchDisplayType()
+{
+  if (localStorage.homedisplay == 'A')
+    {
+      localStorage.homedisplay = 'F';
+    }
+    else{
+      localStorage.homedisplay = 'A';
+    }
+
+  ButtonText();
+  TypeDisplay();
+}
  
