@@ -52,7 +52,7 @@ figure{
 }
 
 
-.blogMenu :nth-child(odd) {
+.blogMenu :nth-child(odd){
     background-color: #ddd;
 }
 
