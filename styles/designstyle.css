@@ -33,6 +33,7 @@ figcaption{
 }
 
 figure{
+    text-align: center;
     padding-top: 25px;
 }
 
@@ -52,14 +53,18 @@ figure{
 }
 
 .info-structure{
-    width: 700px;
+    width: 300px;
 }
 
 .userflow{
     width: 500px;
 }
+figure:has(> .userflow){
+    margin: 0;
+}
 
 @media only screen and (max-width: 768px) {
+    
     article{
         width: 90%;
         margin-left: 5%;
@@ -67,7 +72,13 @@ figure{
 
 }
 
+
+
 @media only screen and (max-width: 580px) {
+    .userflow
+    {
+        width: 100%;
+    }
     .wireframe-display figure{
         flex: 100%;
     }

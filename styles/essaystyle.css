@@ -69,8 +69,8 @@ li{
 }
 
 @media only screen and (max-width: 600px){
-    article{
-        width: 86%;
-        margin-left: 7%;
+    article {
+        width: 90%;
+        margin-left: 5%;
     }
 }

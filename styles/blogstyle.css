@@ -23,7 +23,7 @@ body{
     background-color: #F8F4EC;
     width: 80%;
     margin-left: 10%;
-    padding-block-end: 20pt;
+    padding-block-end: 50pt;
 }
 
 h1.bolgtitle {
@@ -72,7 +72,7 @@ figure{
     text-align: center;
     position: fixed;
     width: 15%;
-    bottom: 50px;
+    bottom: 30px;
     padding: 8px 0px;
     font-size: 16px;
     content: "";
@@ -88,6 +88,43 @@ figure{
     color: black;
 }
 
+.wireframe-display > figure{
+    text-align: center;
+    flex: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+figure{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.wireframe-display > figure > img{
+    width: 500px;
+}
+
+
+.wireframe-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.info-structure{
+    width: 300px;
+}
+
+.userflow{
+    width: 500px;
+}
+figure:has(> .userflow){
+    margin: 0;
+}
+
 @media only screen and (max-width: 870px){
     article > figure > img{
         width: 100%;
@@ -95,6 +132,12 @@ figure{
 }
 
 @media only screen and (max-width: 768px) {
+    
+    article {
+        width: 84%;
+        margin-left: 8%;
+    }
+
     .container{
         width: 100%;
         margin-left: 0%;
@@ -119,8 +162,26 @@ figure{
 }
 
 @media only screen and (max-width: 600px){
+
+    article {
+        width: 95%;
+        margin-left: 2.5%;
+    }
     article h2, article h3, article h4, article h5, article figure, article p{
         margin-left: 2.5%;
         margin-right: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .userflow
+    {
+        width: 100%;
+    }
+    .wireframe-display figure{
+        flex: 100%;
+    }
+    .wireframe-display > figure > img{
+        width: 100%;
     }
 }
