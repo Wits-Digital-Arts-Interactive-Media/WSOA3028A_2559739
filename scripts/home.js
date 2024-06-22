@@ -1,8 +1,5 @@
 const typeswitch = document.getElementById("typeswitch");
 typeswitch.addEventListener("click",SwitchDisplayType)
-
-
-
 const div = document.querySelector("div");
 const textbox = document.createElement("section");
 textbox.className = "textbox";
@@ -72,10 +69,7 @@ function DisplayAdvice(){
 }
 
 function DisplayText(text){
-
-  
-  
-  textbox.innerText = text;
+  textbox.innerText = `"${text}"`;
   
 }
 
