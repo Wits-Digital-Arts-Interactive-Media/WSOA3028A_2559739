@@ -87,3 +87,27 @@ function earFunction() {
   else
     p.innerHTML = `I was recently hit on my left ear by a hockey ball at training. It tore my cartilage. I went to a plastic surgeon to stitch it up, i will post updates`;
 }
+
+
+const gfBtn = document.getElementById("gf");
+gfBtn.addEventListener("click", gfFunction);
+
+function gfFunction() {
+  const p = document.getElementById("gf").parentElement.children[1]
+  if (p.innerHTML != '')
+    p.innerHTML = ''
+  else
+    p.innerHTML = `I have a girlfriend. Her name is Saiyuri. She is pretty`;
+}
+
+
+const wisedomBtn = document.getElementById("wisedom");
+wisedomBtn.addEventListener("click", wisedomFunction);
+
+function wisedomFunction() {
+  const p = document.getElementById("wisedom").parentElement.children[1]
+  if (p.innerHTML != '')
+    p.innerHTML = ''
+  else
+    p.innerHTML = `My girlfriend just got her wisedoms out... ouch.`;
+}
