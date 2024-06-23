@@ -101,13 +101,13 @@ function gfFunction() {
 }
 
 
-const wisedomBtn = document.getElementById("wisedom");
-wisedomBtn.addEventListener("click", wisedomFunction);
+const wisdomBtn = document.getElementById("wisdom");
+wisdomBtn.addEventListener("click", wisdomFunction);
 
-function wisedomFunction() {
-  const p = document.getElementById("wisedom").parentElement.children[1]
+function wisdomFunction() {
+  const p = document.getElementById("wisdom").parentElement.children[1]
   if (p.innerHTML != '')
     p.innerHTML = ''
   else
-    p.innerHTML = `My girlfriend just got her wisedoms out... ouch.`;
+    p.innerHTML = `My girlfriend just got her wisdom teeth out... ouch.`;
 }
